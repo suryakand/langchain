@@ -22,8 +22,8 @@ Before you begin, make sure you have:
 ## 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/suryakand/langchain.git
+cd langchain
 ```
 
 ## 2. Install Dependencies
