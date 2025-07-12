@@ -18,7 +18,11 @@ const prompt = new PromptTemplate({
 // Create a chain that combines the model and the prompt
 const chain = prompt.pipe(model);
 
-// Function to translate text using the chain
+// Chain will handle the formatting of the prompt automatically (see below), so you don't need to call `format` separately.
+// const formattedPrompt = await prompt.format({ text: "Hello, world!" }); 
+
+// Function to translate text using the chain. 
+// Note that we are not formatting the prompt here, as the chain handles it.
 async function translateToFrench(text: string) {
     const response = await chain.invoke({ text });
     console.log("French translation:", response.text);

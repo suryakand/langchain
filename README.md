@@ -41,5 +41,10 @@ Rename the .env.example file to .env and update the `GOOGLE_API_KEY` environment
 npm start
 ```
 
+## 4. Run the Tool and Agent Example
+```bash
+npm run start-tools-example
+```
+
 ## 4. Additional Experiements
 You can update the prompt and input text as needed in the `index.ts` file to try different things.
